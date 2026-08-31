@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body {
+    background-color: #0f1111;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background-color: #131921;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 20px;
+  margin-left: 50px;
+}
+.header__logo img {
+  height: 40px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__nav ul {
+  display: flex;
+  list-style: none;
+}
+.header__nav li {
+  margin: 10px 0;
+}
+.header__nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.header__nav a:hover {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+}
+.header__nav-divider {
+  width: 1px;
+  height: 22px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+.header__actions {
+  display: flex;
+  align-items: center;
+}
+.header__actions button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;;
+}
+.icon {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 8px 10px;
+    border: none;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.icon:hover {
+    color: black;
+    background-color: #fff;
+    border-radius: 100px;
+}
+.lang {
+    color: #fff;
+    font-size: 16px;
+    margin: 0px 5px;
+    padding: 8px 12px;
+    border: none;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.lang:hover {
+    color: black;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.en {
+    font-size: 16px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.header__join-prime {
+  color: #fff;
+  background-color: 1A98ff;
+  font-size: 16px;
+  margin: 0 50px 0 10px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+.header__join-prime:hover {
+  background-color: #1A98ff;
+  color: #fff;
+  box-shadow: 0 0 20px #1A98ff;
+  text-shadow: 0 0 50px #1A98ff;
+}
+
+.hero-content {
+  height: 600px;
+  width: 100%;
+  background-image: url(Attack\ on\ Titan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.hero-title {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+  padding-top: 250px;
+  color: #0f1111;
+  line-height: 1.1;
+  margin-left: 15px;
+}
+.hero-description {
+  color: #00ddff;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  margin-right: 50%;
+  padding-top: 20px;
+  line-height: 1.5;
+  margin-left: 15px;
+}
+.btn-group {
+  display: flex;
+  gap: 15px;
+  margin-left: 15px;
+}
+.btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+.btn-primary {
+  background-color: transparent;
+  color: white;
+        }
+.btn-primary:hover {
+  background-color: transparent;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 168, 225, 0.4);
+}
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  backdrop-filter: blur(5px);
+}
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+.content-section {
+  padding: 20px 0px;
+  position: relative;
+  margin-top: 80px;
+}
+.row-title {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+.row-subtitle1 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+  top: -40px;
+  left: 15%;
+  cursor: pointer;
+}
+.row-subtitle2 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+  top: -40px;
+  left: 11.5%;
+  cursor: pointer;
+}
+.row-subtitle3 {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+  top: -40px;
+  left: 15.5%;
+  cursor: pointer;
+}
+.movie-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Hide scrollbar for row but keep functionality */
+.movie-row::-webkit-scrollbar {
+  display: none;
+}
+.movie-card {
+  min-width: 250px;
+  height: 140px;
+  border-radius: 8px;
+  background: black;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+  overflow: hidden;
+  scroll-snap-align: start; /* Aligns cards perfectly when scrolling */
+}
+/* Adding generic gradient backgrounds for cards */
+.card-1 { 
+  background-image: url(Interstellar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-2 { 
+  background-image: url(Stranger\ Things\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-3 { 
+  background-image: url(The\ Boys.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-4 { 
+  background-image: url(Breaking\ Bad.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-5 { 
+  background-image: url(Inception.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-6 { 
+  background-image: url(Dark.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-7 { 
+  background-image: url(Dune.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-8 { 
+  background-image: url(Batman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-9 { 
+  background-image: url(Oppenheimer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-10 { 
+  background-image: url(John\ Wick.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-11 { 
+  background-image: url(Avenger.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-12 { 
+  background-image: url(Matrix.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-13 { 
+  background-image: url(Gladiator.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-14 { 
+  background-image: url(Mad\ Max.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-15 { 
+  background-image: url(Top\ Gun.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-16 { 
+  background-image: url(Die\ Hard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-17 { 
+  background-image: url(Terminator.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card-18 { 
+  background-image: url(Jurassic\ Park.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.card {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  font-weight: 600;
+  z-index: 2;
+}
+/* Hover Effect on Movie Cards (Crucial for streaming UI) */
+.movie-card:hover {
+  transform: scale(1.1) translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  z-index: 10;
+}
+/* Play icon overlay on hover */
+.movie-card::before {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 30px;
+  color: white;
+  z-index: 3;
+  transition: transform 0.3s ease;
+  opacity: 0;
+}
+.movie-card:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.movie-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0);
+  transition: background 0.3s ease;
+  z-index: 1;
+}
+.movie-card:hover::after {
+  background: rgba(0,0,0,0.4);
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-logo img {
+  height: 60px;
+}
+.footer-terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.footer-terms div h6 {
+  margin: 10px 10px;
+  font-size: 16px;color: #1A98ff;
+  font-weight: 400;
+
+}
+.footer-terms div h6:hover {
+  color: #62b3f5;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright h6 {
+  margin: 10px 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: darkgrey;
+}
