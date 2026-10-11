@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amazon Prime Video clone — browse trending movies and shows.">
     <title>Amazon Prime Clone</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <header>
@@ -22,17 +23,17 @@
                             <li><a href="#">Movies</a></li>
                             <li><a href="#">TV Shows</a></li>
                             <li><a href="#">Live TV</a></li>
-                            <div class="header__nav-divider"></div>
+                            <li class="header__nav-divider" aria-hidden="true"></li>
                             <li><a href="#">Subscriptions</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <div class="header__actions">
-                <button><span class="material-symbols-outlined icon">search</span></button>
-                <button><span class="material-symbols-outlined lang"><span class="en">EN</span>keyboard_arrow_down</span></button>
-                <button><span class="material-symbols-outlined icon">apps</span></button>
-                <button><span class="material-symbols-outlined icon">account_circle</span></button>
+                <button aria-label="Search"><span class="material-symbols-outlined icon">search</span></button>
+                <button aria-label="Change language"><span class="en">EN</span><span class="material-symbols-outlined icon">keyboard_arrow_down</span></button>
+                <button aria-label="Apps"><span class="material-symbols-outlined icon">apps</span></button>
+                <button aria-label="Account"><span class="material-symbols-outlined icon">account_circle</span></button>
                 <div class="header__join-prime">
                     Join Prime
                 </div>
@@ -43,14 +44,17 @@
         <div>
         <div class="hero-content">
             <h1 class="hero-title">The Silent Cosmos</h1>
-            <p class="hero-description">An epic journey through the uncharted territories of space. Watch the award-winning sci-fi thriller exclusively on StreamFlix. Included with your membership.</p>
+            <p class="hero-description">An epic journey through the uncharted territories of space. Watch the award-winning sci-fi thriller exclusively on Prime Video. Included with your membership.</p>
             <div class="btn-group">
                 <button class="btn btn-primary">▶ Play Now</button>
                 <button class="btn btn-secondary">＋ Add to Watchlist</button>
             </div>
         </div>
         <!-- Row 1 -->
-        <h2 class="row-title">Continue Watching<h6 class="row-subtitle1">See more &#10095</h6></h2>        
+        <div class="row-head">
+            <h2 class="row-title">Continue Watching</h2>
+            <span class="row-subtitle">See more &#10095</span>
+        </div>
         <div class="movie-row">
             <div class="movie-card card-1"><span id="card1" class="card">Interstellar</span></div>
             <div class="movie-card card-2"><span id="card2" class="card">Stranger Things 2</span></div>
@@ -61,7 +65,10 @@
         </div>
 
         <!-- Row 2 -->
-        <h2 class="row-title" style="margin-top: 30px;">Trending Now<h6 class="row-subtitle2">See more &#10095</h6></h2>
+        <div class="row-head row-head--spaced">
+            <h2 class="row-title">Trending Now</h2>
+            <span class="row-subtitle">See more &#10095</span>
+        </div>
         <div class="movie-row">
             <div class="movie-card card-7"><span id="card7" class="card">Dune</span></div>
             <div class="movie-card card-8"><span id="card8" class="card">Batman</span></div>
@@ -70,9 +77,12 @@
             <div class="movie-card card-11"><span id="card11" class="card">Avenger</span></div>
             <div class="movie-card card-12"><span id="card12" class="card">Matrix</span></div>
         </div>
-        
+
         <!-- Row 3 -->
-        <h2 class="row-title" style="margin-top: 30px;">Action & Adventure<h6 class="row-subtitle3">See more &#10095</h6></h2>        
+        <div class="row-head row-head--spaced">
+            <h2 class="row-title">Action &amp; Adventure</h2>
+            <span class="row-subtitle">See more &#10095</span>
+        </div>
         <div class="movie-row">
             <div class="movie-card card-13"><span id="card13" class="card">Gladiator</span></div>
             <div class="movie-card card-14"><span id="card14" class="card">Mad Max</span></div>
