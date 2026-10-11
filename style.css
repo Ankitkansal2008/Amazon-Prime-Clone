@@ -55,7 +55,6 @@ header {
 .header__nav a:hover {
   background-color: white;
   color: black;
-  border: none;
   border-radius: 4px;
 }
 .header__nav-divider {
@@ -83,8 +82,6 @@ header {
     font-size: 16px;
     margin: 0 5px;
     padding: 8px 10px;
-    border: none;
-    align-items: center;
     font-weight: 500;
     cursor: pointer;
 }
@@ -93,41 +90,20 @@ header {
     background-color: #fff;
     border-radius: 100px;
 }
-.lang {
-    color: #fff;
-    font-size: 16px;
-    margin: 0px 5px;
-    padding: 8px 12px;
-    border: none;
-    align-items: center;
-    font-weight: 500;
-    cursor: pointer;
-}
-.lang:hover {
-    color: black;
-    background-color: #fff;
-    border-radius: 8px;
-}
 .en {
     font-size: 16px;
-    margin: 0px 0px;
-    padding: 0px 0px;
-    border: none;
-    align-items: center;
-    justify-content: center;
     font-weight: 500;
-    cursor: pointer;
 }
 .header__join-prime {
+  display: inline-block;
   color: #fff;
   background-color: #1A98ff;
   font-size: 16px;
   margin: 0 30px 0 10px;
   padding: 10px 12px;
-  border: none;
   border-radius: 8px;
-  align-items: center;
   font-weight: 500;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.1s ease;
 }
@@ -164,6 +140,7 @@ header {
   margin-bottom: 30px;
   max-width: 640px;
   line-height: 1.5;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75);
 }
 .btn-group {
   display: flex;
@@ -220,6 +197,7 @@ header {
 .row-subtitle {
   font-size: 1rem;
   color: #fff;
+  text-decoration: none;
   cursor: pointer;
 }
 .row-subtitle:hover {
@@ -328,15 +306,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  flex-wrap: wrap;
 }
-.footer-terms div h6 {
-  margin: 10px 10px;
+.footer-terms a {
+  margin: 10px;
   font-size: 16px;
   color: #1A98ff;
   font-weight: 400;
+  text-decoration: none;
 }
-.footer-terms div h6:hover {
+.footer-terms a:hover {
   color: #62b3f5;
 }
 .copyright {
@@ -344,8 +323,8 @@ header {
   align-items: center;
   justify-content: center;
 }
-.copyright h6 {
-  margin: 10px 10px;
+.copyright p {
+  margin: 10px;
   font-size: 16px;
   font-weight: 400;
   color: darkgrey;
@@ -478,14 +457,13 @@ header {
     height: 44px;
   }
   .footer-terms {
-    flex-wrap: wrap;
     padding: 0 10px;
   }
-  .footer-terms div h6 {
+  .footer-terms a {
     margin: 6px 8px;
     font-size: 14px;
   }
-  .copyright h6 {
+  .copyright p {
     font-size: 13px;
     text-align: center;
   }
@@ -506,5 +484,16 @@ header {
   .icon {
     font-size: 17px;
     padding: 5px;
+  }
+}
+
+/* Respect users who ask for less motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
   }
 }
