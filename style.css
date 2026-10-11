@@ -28,7 +28,7 @@ header {
 }
 .header__logo {
   margin-right: 20px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .header__logo img {
   height: 40px;
@@ -49,7 +49,7 @@ header {
   color: #fff;
   text-decoration: none;
   font-size: 16px;
-  padding: 10px 20px;
+  padding: 10px 16px;
   font-weight: 500;
 }
 .header__nav a:hover {
@@ -122,7 +122,7 @@ header {
   color: #fff;
   background-color: #1A98ff;
   font-size: 16px;
-  margin: 0 50px 0 10px;
+  margin: 0 30px 0 10px;
   padding: 10px 12px;
   border: none;
   border-radius: 8px;
@@ -355,10 +355,10 @@ header {
    Responsive: tablets and phones
    --------------------------------------------------------------- */
 
-/* Below ~1240px the single-row header runs out of room, so the nav drops
+/* Below ~1200px the single-row header runs out of room, so the nav drops
    onto its own full-width row (scrollable if it is still too wide). This
    also covers tablets and phones using the browser's "Desktop site" mode. */
-@media (max-width: 1240px) {
+@media (max-width: 1200px) {
   .header__logo {
     margin-left: 0;
   }
