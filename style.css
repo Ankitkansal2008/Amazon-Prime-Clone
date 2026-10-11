@@ -139,36 +139,36 @@ header {
 }
 
 .hero-content {
-  height: 600px;
+  min-height: 600px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-image: url(Attack\ on\ Titan.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 0 15px 40px;
   margin-bottom: 20px;
 }
 .hero-title {
   font-size: 3.5rem;
   margin-bottom: 15px;
-  padding-top: 250px;
   color: #fff;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85);
   line-height: 1.1;
-  margin-left: 15px;
 }
 .hero-description {
   color: #00ddff;
   font-size: 1.5rem;
   margin-bottom: 30px;
-  margin-right: 50%;
-  padding-top: 20px;
+  max-width: 640px;
   line-height: 1.5;
-  margin-left: 15px;
 }
 .btn-group {
   display: flex;
   gap: 15px;
-  margin-left: 15px;
+  flex-wrap: wrap;
 }
 .btn {
   padding: 12px 30px;
@@ -355,53 +355,20 @@ header {
    Responsive: tablets and phones
    --------------------------------------------------------------- */
 
-@media (max-width: 1024px) {
+/* Below ~1240px the single-row header runs out of room, so the nav drops
+   onto its own full-width row (scrollable if it is still too wide). This
+   also covers tablets and phones using the browser's "Desktop site" mode. */
+@media (max-width: 1240px) {
   .header__logo {
     margin-left: 0;
   }
   .header__join-prime {
     margin-right: 0;
   }
-  .header__nav a {
-    padding: 10px 12px;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    padding: 10px 14px;
-    border-radius: 0 0 14px 14px;
-  }
   .header__container {
     flex-wrap: wrap;
     row-gap: 6px;
   }
-
-  /* Row 1: logo on the left, action icons on the right */
-  .header__logo {
-    margin: 0;
-  }
-  .header__logo img {
-    height: 28px;
-  }
-  .header__actions {
-    margin-left: auto;
-  }
-  .icon {
-    font-size: 18px;
-    padding: 6px;
-    margin: 0;
-  }
-  .en {
-    font-size: 13px;
-  }
-  .header__join-prime {
-    margin: 0 0 0 8px;
-    padding: 8px 10px;
-    font-size: 13px;
-  }
-
-  /* Row 2: nav scrolls sideways instead of overflowing the screen */
   .header__nav {
     order: 3;
     flex: 1 1 100%;
@@ -420,38 +387,60 @@ header {
     margin: 0;
   }
   .header__nav a {
-    padding: 6px 12px;
-    font-size: 14px;
+    padding: 8px 14px;
     white-space: nowrap;
   }
   .header__nav-divider {
     margin: 0;
   }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 14px;
+    border-radius: 0 0 14px 14px;
+  }
+  /* Row 1: logo on the left, action icons on the right */
+  .header__logo {
+    margin: 0;
+  }
+  .header__logo img {
+    height: 28px;
+  }
+  .icon {
+    font-size: 18px;
+    padding: 6px;
+    margin: 0;
+  }
+  .en {
+    font-size: 13px;
+  }
+  .header__join-prime {
+    margin: 0 0 0 8px;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  /* Row 2: smaller nav links */
+  .header__nav a {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
 
   /* Hero */
   .hero-content {
-    height: auto;
-    min-height: 380px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    min-height: 360px;
     padding: 0 16px 28px;
-    background-position: center;
   }
   .hero-title {
     font-size: 2rem;
-    padding-top: 0;
-    margin-left: 0;
   }
   .hero-description {
     font-size: 1rem;
-    margin-right: 0;
-    margin-left: 0;
-    padding-top: 10px;
+    max-width: none;
   }
   .btn-group {
-    margin-left: 0;
-    flex-wrap: wrap;
+    gap: 10px;
   }
   .btn {
     padding: 10px 18px;
